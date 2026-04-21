@@ -27,7 +27,7 @@
   name: "University of Utah",
   degree: "Master of Science in Computer Science",
   location: "Salt Lake City, UT",
-  date: "Aug. 2026 - May 2027"
+  date: "Expected 2027"
 )
 
 #edu_item(
@@ -75,7 +75,6 @@
   name: "FreezeTag: Self-Hosted Image Tagging Platform",
   details: "Go, Next.js, TypeScript, Python, REST APIs",
   date: "Aug. 2025 - Present",
-  location: "Salt Lake City, UT",
   [Designed and implemented a full-stack image management platform with a Go (Gin) backend and Next.js frontend.],
   [Built RESTful APIs for image metadata extraction, tagging, and search with typed Result/Option abstractions.],
   [Implemented a modular architecture for automated tagging (Python-based vision model integration) and third-party plugins.],
@@ -85,14 +84,12 @@
   name: "Deferred Rendering Engine",
   details: "C++, OpenGL, FreeGLUT",
   date: "Mar. 2025 - Apr. 2025",
-  location: "Salt Lake City, UT",
   [Built a deferred rendering pipeline with geometry and lighting passes, multiple render targets, and physically based shading.],
   [Implemented light volume rendering supporting 128 dynamic lights and optimized fragment shading for high-density scenes.],
 )#project_item(
   name: "Custom Memory Allocator",
   details: "C, Makefile",
   date: "Oct. 2024 - Nov. 2024",
-  location: "Salt Lake City, UT",
   [Implemented a malloc-style memory allocator with free lists, block splitting/coalescing, and alignment guarantees, validating behavior under fragmentation stress tests.],
 )
 
@@ -101,7 +98,6 @@
   name: "Software Development Club",
   role: "Co-Founder, President",
   date: "May 2023 - Present",
-  location: "Salt Lake City, UT",
   [Coordinated a month-long online hackathon and portfolio website competition achieving 90%+ member participation.],
   [Increased active member participation by 60% through strategic partnerships and high-impact events.],
   [Organized workshops, guest speaker events, and educational activities, contributing to the skill development of club members in the field of software development.],

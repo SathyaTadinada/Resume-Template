@@ -99,7 +99,8 @@
     #name_header(name) \
     #v(-8pt)
 
-    #link("tel:" + phoneNumber)[#header_item(ico_phone, phoneNumber, size: 0.9em)]
+    #let clean_phone = "+1" + phoneNumber.replace(regex("[^0-9]"), "")
+    #link("tel:" + clean_phone)[#header_item(ico_phone, phoneNumber, size: 0.9em)]
     | #link("mailto:" + email)[#header_item(ico_mail, email, size: 0.8em)]
     | #link("https://" + site)[#header_item(ico_home, site, size: 0.8em)]
     | #link("https://" + linkedinLink)[#header_item(ico_linkedin, "in/" + linkedinUsername, size: 0.8em)]
@@ -124,7 +125,8 @@
     #name_header(name) \
     #text(title, size: 0.9em) \
     #v(-8pt)
-    #link("tel:" + phoneNumber)[#header_item(ico_phone, phoneNumber, size: 0.9em)] |
+    #let clean_phone = "+1" + phoneNumber.replace(regex("[^0-9]"), "")
+    #link("tel:" + clean_phone)[#header_item(ico_phone, phoneNumber, size: 0.9em)] |
     #link("mailto:" + email)[#header_item(ico_mail, email, size: 0.8em)#text(ico_share, size: 0.6em)] |
     #link("https://" + site)[#header_item(ico_home, site, size: 0.8em)#text(ico_share, size: 0.6em)] |
     #link("https://" + linkedinLink)[#header_item(ico_linkedin, "in/" + linkedinUsername, size: 0.8em)#text(ico_share, size: 0.6em)] |
@@ -197,7 +199,6 @@
   name: "Sample Project",
   details: "Details",
   date: "June 2023 - May 2028",
-  location: "Salt Lake City, UT",
   ..points,
 ) = {
   set block(above: 0.5em, below: 0.3em)
@@ -210,7 +211,6 @@
       ],
       context align(right)[
         #text(accent_state.get(), date) \
-        _#text(location, size: 0.95em)_
       ],
     )
     #list(..points)
