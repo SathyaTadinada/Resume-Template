@@ -22,7 +22,7 @@
 
     set text(
       size: font_size_state.get(),
-      font: font_state.get(),
+      // font: font_state.get(),
       weight: 300,
       font_color_state.get(),
     )
